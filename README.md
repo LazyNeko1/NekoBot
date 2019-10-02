@@ -1,5 +1,16 @@
 # NekoBot
 Posting bot meant for anime :3
 
-Right now, it just has two parts.
-Random, and a selector.
+#Next update: adding commands and their uses
+
+
+
+
+
+
+
+
+
+
+
+Note: this bot is NOT YET copyrighted. If you copy it, I will most likely give you some trouble.
