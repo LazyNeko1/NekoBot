@@ -1,7 +1,7 @@
 # NekoBot
 Posting bot meant for anime :3
 
-#Next update: adding commands and their uses
+Next update: adding commands and their uses
 
 
 
