@@ -110,4 +110,9 @@ async def on_message(message):
      if message.content.startswith(prefix+"neko"):
           embed=discord.Embed(title="Nekos!")
           embed.set_image(nbapi.random.neko())
-          #embed.set_footer("")#will do later :p
+          embed.set_footer(text="Made by LazyNeko",icon_url="http://neko-bot.net/images/ownericon.round.png")
+     if message.content.startswith(prefix+"anime"):
+          embed=discord.Embed(title="Anime!")
+          embed.set_image(nbapi.random.anime())
+          embed.set_footer(text="Made by LazyNeko",icon_url="http://neko-bot.net/images/ownericon.round.png")
+          
