@@ -106,4 +106,8 @@ async def on_message(message):
             'GET', '/guilds/{guild_id}/channels', guild_id=_gid))
         channeldata= [d for d in data if d['id'] == channel.id][0]
         return channeldata
-
+     
+     if message.content.startswith(prefix+"neko"):
+          embed=discord.Embed(title="Nekos!")
+          embed.set_image(nbapi.random.neko())
+          #embed.set_footer("")#will do later :p
