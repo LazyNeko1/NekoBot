@@ -1,5 +1,5 @@
 from __future__ import print_function
-import boto3,glob
+import boto3,glob,psutil
 from PIL.ImageFilter import (
                     GaussianBlur
                     )
@@ -10,9 +10,9 @@ import nekobot as nb
 import flask
 from keep_alive import keep_alive
 #GIT_PYTHON_REFRESH='quiet'
-import pickle
+#import pickle
 import os.path
-import dblvotes
+#import dblvotes
 
 import asyncio
 import os
@@ -28,24 +28,25 @@ from discord.ext import commands
 from discord.ext.commands import Bot
 from discord.ext.commands import has_permissions
 import sys
-import fileinput
+#import fileinput
 from sys import argv
 import requests, json
 from datetime import date
 from random import randint
-import string,googleocr
+#import string,googleocr
 import random
 from discord.utils import find
 from PIL import Image, ImageDraw, ImageFont, ImageFilter, ImageEnhance
 import json
 #from tesserocr import PyTessBaseApi
-import nbapi
+import nbapi #FOR MY NEKO API :D
 #from PIL import Image, ImageDraw
 import aiohttp
-import logging
-import csv
+#import logging
+#import csv
 import urllib
 import speedtest
-import tkinter as tk
-from tkinter import ttk
-from github import Github
+#import tkinter as tk
+#from tkinter import ttk
+#from github import Github
+# if commented out: not used in public code
