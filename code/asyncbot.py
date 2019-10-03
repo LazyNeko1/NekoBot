@@ -1,15 +1,15 @@
 #IMPORTS ARE IN IMPORTS FILE#
 async def on_message(message):
      import json
-     async def user_voted(author_id=message.author.id):
+     async def user_voted(author_id=message.author.id,botID):
          
-         voteurl=f"https://discordbots.org/api/bots/543966796944769044/check?userId={author_id}"
+         voteurl=f"https://discordbots.org/api/bots/{botID}/check?userId={author_id}"
          async with aiohttp.ClientSession(headers=dblheaders).get(voteurl) as r:
                  
             
-       #  dblvotes.votes.votes.user_voted(client, messager.author.id)
+
              json=await r.text()
- #        return json[9]
+
          if int(json[9]) >0:
              return True
          else:
@@ -22,7 +22,7 @@ async def on_message(message):
          data=json.loads(await client.http.request(
             discord.http.Route(
             'GET', '/guilds/'+_gid)))
-       #  channeldata= [d for d in data if d['id'] == message.server.id][0]
+
          return data
      class nitro():             
       async def tier(self=client):
@@ -33,7 +33,7 @@ async def on_message(message):
          data=await client.http.request(
             discord.http.Route(
             'GET', '/guilds/'+_gid))
-       #  channeldata= [d for d in data if d['id'] == message.server.id][0]
+
          return data["premium_tier"]
       async def count(self=client):
          try:
