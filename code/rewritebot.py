@@ -1,6 +1,7 @@
 from discord.ext import commands
+import discord
 
-prefix = "#="
+prefix = "="
 
 import nbapi
 
@@ -17,8 +18,10 @@ bot = commands.Bot(command_prefix=prefix)
 async def neko(ctx):
 
     
+    embed=discord.Embed(title='Nekos!')
+    embed.set_image(url=nbapi.random.neko())
+    await ctx.send(embed=embed)#i have no idea how to make a embed 
 
-    await ctx.send(nbapi.random.neko())#i have no idea how to make a embed 
-
-
-bot.run('TOKEN')
+    
+    
+    bot.run('token')
