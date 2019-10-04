@@ -33,15 +33,21 @@ client.on('message', (receivedMessage) => {
 
 const animeEmbed = new Discord.RichEmbed()
 	.setTitle('Anime!!')
-	.setImage("http://neko-bot.net/anime/anime30.png")//nbapi.random.neko())//lib not ready
+	.setImage("http://neko-bot.net/anime/anime30.png")//nbapi.randomAnime())//lib not ready
 	.setFooter('Made by LazyNeko', 'http://neko-bot.net/images/ownerimg.round.png');
 const nekoEmbed = new Discord.RichEmbed()
 	.setTitle('Nekos!')
-	.setImage("http://neko-bot.net/nekos/neko30.png")//nbapi.random.neko())//lib not ready
+	.setImage("http://neko-bot.net/nekos/neko30.png")//nbapi.randomAnime())//lib not ready
 	.setFooter('Made by LazyNeko', 'http://neko-bot.net/images/ownerimg.round.png');
+	
 	if (receivedMessage.content.startsWith(prefix+"neko")){
     receivedMessage.channel.send(nekoEmbed)
-}})
+}	
+	if (receivedMessage.content.startsWith(prefix+"anime")){
+    receivedMessage.channel.send(animeEmbed)
+}	
+	
+})
 
 
 
