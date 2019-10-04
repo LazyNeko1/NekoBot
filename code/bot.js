@@ -3,7 +3,7 @@
 //Right now, i'm just going to use the raw API data. /shrug
 //obviously requires the dependincies below
 const Discord = require('discord.js')
-const nbapi = require('nbapi')
+//const nbapi=require("nbapi")
 
 //end of dependincies
 const client = new Discord.Client()
@@ -33,11 +33,12 @@ client.on('message', (receivedMessage) => {
 
 const nekoEmbed = new Discord.RichEmbed()
 	.setTitle('Nekos!')
-	.setImage(nbapi.randomNeko())
+	.setImage("http://neko-bot.net/nekos/neko30.png")//nbapi.random.neko())//lib not ready
 	.setFooter('Made by LazyNeko', 'http://neko-bot.net/images/ownerimg.round.png');
+	if (receivedMessage.content.startsWith("neko")){
     receivedMessage.channel.send(nekoEmbed)
-})
+}})
 
 
 
-client.login('')
+client.login("")
