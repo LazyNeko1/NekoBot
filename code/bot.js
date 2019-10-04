@@ -4,7 +4,7 @@
 //obviously requires the dependincies below
 const Discord = require('discord.js')
 //const nbapi=require("nbapi")
-
+var prefix = "#="
 //end of dependincies
 const client = new Discord.Client()
 
@@ -35,7 +35,7 @@ const nekoEmbed = new Discord.RichEmbed()
 	.setTitle('Nekos!')
 	.setImage("http://neko-bot.net/nekos/neko30.png")//nbapi.random.neko())//lib not ready
 	.setFooter('Made by LazyNeko', 'http://neko-bot.net/images/ownerimg.round.png');
-	if (receivedMessage.content.startsWith("neko")){
+	if (receivedMessage.content.startsWith(prefix+"neko")){
     receivedMessage.channel.send(nekoEmbed)
 }})
 
