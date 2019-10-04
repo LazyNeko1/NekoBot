@@ -31,6 +31,10 @@ client.on('message', (receivedMessage) => {
         return
     }
 
+const animeEmbed = new Discord.RichEmbed()
+	.setTitle('Anime!!')
+	.setImage("http://neko-bot.net/anime/anime30.png")//nbapi.random.neko())//lib not ready
+	.setFooter('Made by LazyNeko', 'http://neko-bot.net/images/ownerimg.round.png');
 const nekoEmbed = new Discord.RichEmbed()
 	.setTitle('Nekos!')
 	.setImage("http://neko-bot.net/nekos/neko30.png")//nbapi.random.neko())//lib not ready
