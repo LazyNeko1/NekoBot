@@ -29,15 +29,15 @@
 
 **Basic API commands**
 
-#=neko
+`#=neko`
 
-#=anime
+`#=anime`
 
-#=pat | random pat image from the NBAPI module. 
+`#=pat | random pat image from the NBAPI module. `
 
 **Uploading to API**
 
-`#=neko upload ($) | only .png, .gif will use first frame visible.
+`#=neko upload ($) | only .png, .gif will use first frame visible.`
 
 `#=anime upload ($) | only .png, .gif will use first frame visible.`
 
