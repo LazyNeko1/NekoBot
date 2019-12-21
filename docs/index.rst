@@ -11,7 +11,7 @@
 
 
 **Profile commands**
-
+-----
 `#=profile create`
 
 `#=profile addtext (%)`
@@ -22,10 +22,20 @@
 
 `#=profile color (#)`
 
+**Posting Commands**
+-----
+#=post create <ARGS>
 
+  Arguments:
+   `-noavatar` | will not show avatar next to name
 
-
+   `-text(%)`  | text of post
+   
+   `-title(%)`  | title of post
+ 
+   Note: the `-` and `()` are required.
 **API commands**
+-----
 
 **Basic API commands**
 
