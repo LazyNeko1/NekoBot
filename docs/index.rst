@@ -34,7 +34,7 @@
    `-title(%)`  | title of post
  
    Note: the `-` and `()` are required.
-      `AT THE MOMENT IT WILL NOT BE PUBLIC!`
+      ``AT THE MOMENT IT WILL NOT BE PUBLIC!``
           I need to set up a webserver to communicate to my website & computer without sending data through AWS directly.
 **API commands**
 -----
