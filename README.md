@@ -1,7 +1,6 @@
 # NekoBot
 Posting bot meant for anime :3
 
-Next update: posts
 
 
 
